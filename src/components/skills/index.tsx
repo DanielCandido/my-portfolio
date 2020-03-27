@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import { SkillContainer, Title } from './styled';
+import { SkillContainer, Title, SkillCard, Skill } from './styled';
 import { ThemeContext } from 'styled-components';
 
 const Skills: React.FC = () => {
@@ -8,11 +8,24 @@ const Skills: React.FC = () => {
 
     return (
         <SkillContainer>
-            <div>
+            <div style={{width: '60%', textAlign: "center"}}>
                 <Title>Skills</Title>
-                {/* <Progress active value={50} />
-                <Progress active value={50} />
-                <Progress active value={50} /> */}
+                <p>REACT</p>
+                <SkillCard>
+                    <Skill style={{width: '70%', backgroundColor: '#AA78A6', paddingRight: '4px'}}>70%</Skill>
+                </SkillCard>
+                <p>Angular</p>
+                <SkillCard>
+                    <Skill style={{width: '85%', backgroundColor: '#457EAC', paddingRight: '4px'}}>85%</Skill>
+                </SkillCard>
+                <p>C#</p>
+                <SkillCard>
+                    <Skill style={{width: '85%', backgroundColor: '#2D5D7B', paddingRight: '4px'}}>85%</Skill>
+                </SkillCard>
+                <p>NodeJS</p>
+                <SkillCard>
+                    <Skill style={{width: '90%', backgroundColor: '#531253', paddingRight: '4px'}}>90%</Skill>
+                </SkillCard>
             </div>
         </SkillContainer>
     )
