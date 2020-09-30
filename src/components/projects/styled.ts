@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SkillContainer = styled.div`
+export const ProjectContainer = styled.div`
     width: 100%;
     height:100%;
     padding:30px;
@@ -15,17 +15,5 @@ export const Title = styled.h2`
     padding: 5px;
     margin: 20px;
     display: inline-block;
-`
-
-export const SkillCard = styled.div`
-    width: 100%;
-    background-color: #ddd;
-    margin: 10px 0;
-`
-
-export const Skill = styled.div`
-   text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
+    text-align: center;
 `
